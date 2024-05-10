@@ -5,7 +5,7 @@ Keenan Bedenfield
 Updated files for hiring assessment.
 
 5 files
-Technical assessment 
+Technical assessment & 
 Hypothetical assessment
 
 Assessment.zip

@@ -4,12 +4,10 @@ Keenan Bedenfield
 
 Updated files for hiring assessment.
 
-5 files
+4 files
 Technical assessment & 
 Hypothetical assessment
 
-Assessment.zip
-81.7kB
 
 testXML.xml
 2kB

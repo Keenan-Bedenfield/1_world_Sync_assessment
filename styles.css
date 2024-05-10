@@ -1,0 +1,22 @@
+#question1 li{
+	list-style-type: none;
+}
+
+.ratings {
+    text-align: center;
+
+}
+
+#PRImage {
+    visibility: hidden;
+}
+
+pre {
+
+    color: green;
+}
+
+.highlighter {
+    color:  indianred;
+}
+

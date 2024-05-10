@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TSA Applicant Technical Assessment</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.bad"></script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>
+        <p>Your answers to the questions need to be embedded into the 4 files (including this one) extracted from
+            the zip. Therefore, it will be necessary for you to edit these files to include your answers.</p>
+    </h2>
+
+    <h1>TSA Applicant Technical Assessment</h1>
+
+    <ol>
+        <li>
+            <h3>Add your name to this page between the two horizontal lines. You will need to edit Test.html to answer
+                this question.</h3>
+        </li>
+        <!-- Q1 answer -->
+        <h2><b>Keenan Bedenfield</b></h2>
+
+        <li>
+            <h3>Please score yourself on the following skills. 1-10, 10 being a
+                rockstar and 1 not knowing anything. You will need to edit
+                Test.html to answer this question.</h3>
+
+            <!-- Q2 answer -->
+            <table id="skills">
+                <tr>
+                    <th>Skill</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td class="ratings">8</td>   
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td class="ratings">8</td>        
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td class="ratings">7</td>
+                </tr>
+                <tr>
+                    <td>Unix</td>   
+                    <td class="ratings">5</td>   
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td class="ratings">3</td>
+                </tr>
+            </table>
+        </li>
+
+        <li>
+            <h3>Hide the below image by updating the styles.css file.</h3>
+            <img alt="PRLogo" id="PRImage"
+                src="https://www.powerreviews.com/wp-content/themes/pwr-corpsite-v2/images/logo.png">
+        </li>
+
+        <li>
+            <h3>Correct the below JavaScript. You will need to edit Test.html
+                to answer this question.</h3>
+                var a = 10; var b = 20; if(a = b) { alert("These
+                numbers are the same"); }
+
+            <!-- Q4 answer -->    
+            <pre>Correction:
+                <code>
+                    var a = 10; 
+                    var b = 20; 
+                    if(a === b) { 
+                        alert("These numbers are the same"); 
+                    } </code>
+            </pre>
+        </li>
+
+        <li>
+            <h3>There are 2 issues with the file testXML.xml, correct the
+                problems. What were the problems? You will need to edit testXML.xml
+                and Test.html to answer this question.</h3>
+
+            <!-- Q5 answer -->    
+            <p>The end tags for the "name" and "product" tags were missing.</p>
+        </li>
+
+        <li>
+            <h3>Put a button directly below this question and have it say
+                "click me". Add functionality to the button such that when the button is clicked, the text below changes
+                to say "Button Clicked". You will need to edit Test.html and script.js to answer this question.</h3>
+        </li>
+        <!-- Q6 answer -->
+        <button id="myButton" onclick="toggleText()"> Click me </button>
+
+        <hr>
+        <h3>For questions 7 and 8 refer to the table diagrams below.</h3>
+        <table style="float:left; margin-right:60px; margin-bottom:40px;">
+            <tr>
+                <th style="border: 2px solid black;">reviews</th>
+            </tr>
+            <tr>
+                <td>* foreign key </td> <!-- Q7 answer  *** product_id in the reviews table, which will reference the primary key column id in the products table.-->
+            </tr>
+            <tr>
+                <td>* review_id</td>
+            </tr>
+            <tr>
+                <td>rating</td>
+            </tr>
+            <tr>
+                <td>headline</td>
+            </tr>
+            <tr>
+                <td>comments</td>
+            </tr>
+            <tr>
+                <td>name</td>
+            </tr>
+            <tr>
+                <td>location</td>
+            </tr>
+        </table>
+        <table style="float:left; margin-bottom:40px;">
+            <tr>
+                <th style="border: 2px solid black;">products</th>
+            </tr>
+            <tr>
+                <td>* primary key</td> <!-- Q7 answer -->
+            </tr>
+            <tr>
+                <td>* product_id</td>
+            </tr>
+            <tr>
+                <td>name</td>
+            </tr>
+            <tr>
+                <td>url</td>
+            </tr>
+            <tr>
+                <td>image_url</td>
+            </tr>
+            <tr>
+                <td>category</td>
+            </tr>
+            <tr>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>brand</td>
+            </tr>
+        </table>
+        </p>
+        <p></p>
+
+        <li style="clear:left" ;>
+            <h3>Suppose you are working with a relational database with a reviews table and a products table as
+                described in the above table diagrams. How could you alter the design so that the tables are linked
+                together such that it is guaranteed that a product can have many reviews, but one review can be for only
+                one product? You will need to edit Test.html to answer this question.</h3>
+        </li>
+        <li>
+            <h3>Based on your update from question 7, write a SQL query that would return all reviews for the product
+                with name = "Super Awesome Fun Product". You will need to edit Test.html to answer this question.</h3>
+        </li>
+        
+        <!-- ___ Q8 answer ___ -->
+        <code>
+            <p>SELECT reviews.*</p>
+            <p>FROM reviews</p>
+            <p> JOIN products ON reviews.product_id = products.id</p>
+            <p> WHERE products.name = 'Super Awesome Fun Product';</p>
+        </code>
+         <!--JOIN operation combines rows from the reviews table with rows from the products table where the product_id in the reviews table matches the id in the products table.-->
+        
+        <hr>
+
+        <li>
+            <h3>Are there any errors on this page (grammar doesn't count)? If so, what are they? Can you fix them? You
+                will need to edit Test.html to answer this question.</h3>
+        </li>
+        <!-- ___ Q9 answer __ -->
+        <p>No page errors.</p>
+        
+
+        <li>
+            <h3>There is a unix directory of /Users/me/files/oldFiles/newFiles. In the newFiles directory there is a
+                file named moveMe.txt. Write a command to move the file from newFiles, to oldFiles. You will need to
+                edit Test.html to answer this question.</h3>
+        </li>
+        <p>If outside of the file folder I would use: <i class="highlighter"> mv </i> /Users/me/files/oldFiles/newFiles/moveMe.txt /Users/me/files/oldFiles/
+        </p>
+    </ol>
+
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<product xsi:type="ProductWithReviews" locale="en_US">
+<pageid>100005559</pageid>
+<name> 
+<smallstarimagelocation>pwr/engine/images/stars_small.gif</smallstarimagelocation>
+<largestarimagelocation>pwr/engine/images/stars.gif</largestarimagelocation>
+<newestreviewdate>2014-10-13</newestreviewdate>
+<oldestreviewdate>2014-10-13</oldestreviewdate>
+<averageoverallrating>4</averageoverallrating>
+<average_rating_decimal>4</average_rating_decimal>
+<fullreviews>1</fullreviews>
+<confirmstatusgroup>
+<confirmstatus>Verified Reviewer</confirmstatus>
+</confirmstatusgroup>
+<taggroup key="bestuses" name="Best Uses">
+<tag isuseradded="false" count="1">Casual wear</tag>
+<tag isuseradded="false" count="1">Wear to school</tag>
+</taggroup>
+<taggroup key="comfortvsstyle" name="Comfort vs Style">
+<tag isuseradded="false" count="1">Style driven</tag>
+</taggroup>
+<taggroup key="describeyourself" name="Describe Yourself">
+<tag isuseradded="false" count="1">Classic dresser</tag>
+</taggroup>
+<taggroup key="pros" name="Pros">
+<tag isuseradded="false" count="1">Comfortable</tag>
+<tag isuseradded="false" count="1">Figure flattering</tag>
+<tag isuseradded="false" count="1">Practical</tag>
+<tag isuseradded="false" count="1">Quality materials</tag>
+<tag isuseradded="false" count="1">Washes well</tag>
+<tag isuseradded="false" count="1">Well made</tag>
+</taggroup>
+<taggroup key="sizing" name="Sizing">
+<tag isuseradded="false" count="1">Feels true to size</tag>
+</taggroup>
+<taggroup key="wasthisagift" name="Was this a gift?">
+<tag isuseradded="false" count="1">No</tag>
+</taggroup>
+<bottom_line_yes_votes>1</bottom_line_yes_votes>
+<bottom_line_no_votes>0</bottom_line_no_votes>
+<customerimages>false</customerimages>
+<customervideos>false</customervideos>
+<inlinefiles>
+<inlinefile reviewpage="1">pwr/pbhiw672/inline/01/49/100005559-en_US-1-reviews.html</inlinefile>
+</inlinefiles>
+</name> <!-- Corrected: closing tag was missing -->
+</product> <!-- Corrected: closing tag was missing-->
+</products>
